@@ -3,7 +3,6 @@ package com.rafaniander.casadocodigo.greendogdelivery.controller;
 import com.rafaniander.casadocodigo.greendogdelivery.entity.Cliente;
 import com.rafaniander.casadocodigo.greendogdelivery.repository.ClienteRepository;
 import javax.validation.Valid;
-import javax.websocket.server.PathParam;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
