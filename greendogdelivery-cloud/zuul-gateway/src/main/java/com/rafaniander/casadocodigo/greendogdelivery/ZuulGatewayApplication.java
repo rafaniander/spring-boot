@@ -2,13 +2,13 @@ package com.rafaniander.casadocodigo.greendogdelivery;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.cloud.client.SpringCloudApplication;
-import org.springframework.cloud.config.server.EnableConfigServer;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
-@EnableConfigServer
+@EnableZuulProxy
 @SpringCloudApplication
-public class ConfigServerApplication {
+public class ZuulGatewayApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ConfigServerApplication.class, args);
+		SpringApplication.run(ZuulGatewayApplication.class, args);
 	}
 }
