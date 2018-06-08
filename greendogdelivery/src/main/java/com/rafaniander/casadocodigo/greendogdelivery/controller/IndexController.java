@@ -1,6 +1,9 @@
 package com.rafaniander.casadocodigo.greendogdelivery.controller;
 
+import com.rafaniander.casadocodigo.greendogdelivery.dto.MensagemDTO;
 import java.util.Properties;
+import javax.servlet.http.HttpServletRequest;
+import org.springframework.beans.factory.annotation.Value;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -30,6 +33,24 @@ public class IndexController {
     @ResponseBody
     public Properties properties() {
         return System.getProperties();
+    }
+
+    @Value("${mensagem:nenhuma}")
+    private String message;
+
+    @Value("${debug:0}")
+    private String debug;
+
+    @GetMapping("/oferta")
+    @ResponseBody
+    public MensagemDTO getMessage(HttpServletRequest request) {
+        return new MensagemDTO(this.message, request.getServerName() + ":" + request.getServerPort(), this.debug);
+    }
+
+    @GetMapping("/servidor")
+    @ResponseBody
+    public String server(HttpServletRequest request) {
+        return request.getServerName() + ":" + request.getServerPort();
     }
 
 }

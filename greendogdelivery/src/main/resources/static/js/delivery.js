@@ -11,15 +11,15 @@ app.controller('pedidoController', function ($scope, $location, $http) {
     $scope.subTotal = 0;
     $scope.pedidoItens = [];
 
-//    var carregaOferta = function () {
-//        $http.get("/oferta").success(function (data) {
-//            $scope.oferta = data["mensagem"];
-//            $scope.servidor = data["servidor"];
-//            $scope.debug = data["debug"];
-//        }).error(function (data, status) {
-//            $scope.message = "Aconteceu um problema: " + data;
-//        });
-//    };
+    var carregaOferta = function () {
+        $http.get("/oferta").success(function (data) {
+            $scope.oferta = data["mensagem"];
+            $scope.servidor = data["servidor"];
+            $scope.debug = data["debug"];
+        }).error(function (data, status) {
+            $scope.message = "Aconteceu um problema: " + data;
+        });
+    };
 
     var carregarItens = function () {
         $http.get("/api/itens").success(function (data) {
@@ -58,7 +58,7 @@ app.controller('pedidoController', function ($scope, $location, $http) {
     }
 
     carregarItens();
-    //carregaOferta();
+    carregaOferta();
 
 });
  
