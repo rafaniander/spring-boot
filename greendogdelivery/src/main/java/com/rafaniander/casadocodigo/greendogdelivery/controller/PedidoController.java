@@ -75,7 +75,7 @@ public class PedidoController {
             }
             pedidoParaAlterar.setData(pedido.getData());
             pedidoParaAlterar.setValorTotal(valorTotal);
-            c.getPedidos().remove(pedidoParaAlterar.getId());
+            c.getPedidos().remove(pedidoParaAlterar);
             c.getPedidos().add(pedidoParaAlterar);
             this.clienteRepository.save(c);
         } else {
