@@ -21,10 +21,15 @@ public class IndexController {
         return "ambiente";
     }
 
+    @GetMapping("/delivery")
+    public String delivery() {
+        return "delivery/index";
+    }
+
     @GetMapping("/properties")
-	@ResponseBody
-	public Properties properties() {
-		return System.getProperties();
-	}
+    @ResponseBody
+    public Properties properties() {
+        return System.getProperties();
+    }
 
 }
