@@ -21,7 +21,7 @@ public class IndexController {
         return "ambiente";
     }
 
-    @GetMapping("properties")
+    @GetMapping("/properties")
 	@ResponseBody
 	public Properties properties() {
 		return System.getProperties();

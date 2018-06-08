@@ -21,7 +21,7 @@ public class Item {
     private String nome;
 
     @NotNull
-    @Min(value = 20, message = "O valor mínimo deve ser {valor} reais")
+    @Min(value = 20, message = "O valor mínimo deve ser {value} reais")
     private Double preco;
 
     public Item() {

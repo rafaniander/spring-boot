@@ -1,8 +1,10 @@
 package com.rafaniander.casadocodigo.greendogdelivery.controller;
 
+import javax.validation.Valid;
+
 import com.rafaniander.casadocodigo.greendogdelivery.entity.Cliente;
 import com.rafaniander.casadocodigo.greendogdelivery.repository.ClienteRepository;
-import javax.validation.Valid;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
