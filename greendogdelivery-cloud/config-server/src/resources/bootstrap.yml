@@ -1,0 +1,10 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: /home/rafael/Desktop/Git/spring-boot/greendogdelivery-cloud/config-repo
