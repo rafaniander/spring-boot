@@ -1,5 +1,5 @@
 server:
-  port: 8889
+  port: 8888
 spring:
   application:
     name: config
@@ -7,9 +7,4 @@ spring:
     config:
       server:
         git:
-          uri: /home/rafael/Desktop/Git/rafaniander/spring-boot/greendogdelivery-cloud/config-repo
-          skipSslValidation: true
-          # username: test
-          # password: 1234
-          # uri: /home/rafael/Projetos/spring-boot/greendogdelivery-cloud/config-repo
-
+          uri: /home/rafael/Projetos/rafaniander/spring-boot/greendogdelivery-cloud/config-repo

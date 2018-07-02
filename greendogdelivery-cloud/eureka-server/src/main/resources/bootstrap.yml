@@ -5,11 +5,9 @@ spring:
     name: server
   cloud:
     config:
-      uri: http://localhost:8888
-      username: test
-      password: 1234
-
-# eureka
+      uri: http://192.168.0.100:8888
+      enabled: false
+      fail-fast: false
 eureka:
   instance:
     hostname: localhost
