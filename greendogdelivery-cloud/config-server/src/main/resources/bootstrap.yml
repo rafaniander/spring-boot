@@ -7,6 +7,9 @@ spring:
     config:
       server:
         git:
-          uri: /home/rafael/Projetos/spring-boot/greendogdelivery-cloud/config-repo
-          #uri: /home/rafael/Desktop/Git/rafaniander/spring-boot/greendogdelivery-cloud/config-repo
+          uri: /home/rafael/Desktop/Git/rafaniander/spring-boot/greendogdelivery-cloud/config-repo
+          skipSslValidation: true
+          # username: test
+          # password: 1234
+          # uri: /home/rafael/Projetos/spring-boot/greendogdelivery-cloud/config-repo
 
