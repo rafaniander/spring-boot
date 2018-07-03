@@ -7,4 +7,4 @@ spring:
     config:
       server:
         git:
-          uri: /home/rafael/Projetos/rafaniander/spring-boot/greendogdelivery-cloud/config-repo
+          uri: /home/rafael/Desktop/Git/rafaniander/spring-boot/greendogdelivery-cloud/config-repo
